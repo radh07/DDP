@@ -1,4 +1,4 @@
-library(shiny) 
+library(shiny)
 shinyUI(fluidPage(
   titlePanel("Basic Metabolic Rate (BMR) / Total Daily Energy Expenditue (TDEE) Calculator"), 
   fluidRow(
