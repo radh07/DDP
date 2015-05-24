@@ -42,7 +42,7 @@ is the amount of calories required to carry out the activities including eating,
                                                  "Total Daily Energy Expenditure" = 2),
                                   selected = c(1,2)))),
   fluidRow(
-    column(12,actionButton("go", label="Calculate!"))
+    column(12,submitButton("Calculate!"))
   ),
   fluidRow(
     column(12, h2(textOutput("results")))
