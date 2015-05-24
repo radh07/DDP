@@ -1,10 +1,10 @@
 library(shiny) 
 shinyServer(
   function(input, output) {
-    output$results<-renderText({if(input$go) "Results:"})
+    output$results<-renderText({ "Results:"})
     output$text1<- renderText(
 { 
-  if(input$go && 1 %in% input$calc){ 
+  if( 1 %in% input$calc){ 
     if(input$sex==1)
     {
       paste("Your BMR is ", 655+4.35*input$wt+4.7*input$ht-4.7*input$age)
@@ -20,7 +20,7 @@ shinyServer(
 
 output$text2<- renderText(
 { 
-  if(input$go && 2 %in% input$calc){ 
+  if(2 %in% input$calc){ 
 
     if(input$sex==1)
     {
